@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="script" href="script.js">
-    <link rel="stylesheet" href="log_in_style.css">
-    <title>Log in | Miso.</title>
+    <link rel="stylesheet" href="sign_up_style.css">
+    <title>Sign up | Miso.</title>
 </head>
 <body style="display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0;">
     <header>
         <span class="logo">Miso.</span>
-        <button class="btn-2" onclick="window.location.href='sign_up.html'">SIGN UP</button>
-        <button class="btn-3">LOG IN</button>
+        <button class="btn-2">SIGN UP</button>
+        <button class="btn-3" onclick="window.location.href='log_in.html'">LOG IN</button>
         <button class="btn-4">SEARCH</button>
         <button class="btn-5" onclick="window.location.href='index.html'">HOME</button>
     </header> 
     <form class="form">
-        <div class="title">Welcome,<br><span>Log in :</span></div>
+        <div class="title">Welcome,<br><span>Sign up :</span></div>
+        <input type="text" placeholder="Full Name" name="name" class="input">
         <input type="email" placeholder="Email" name="email" class="input">
         <input type="password" placeholder="Password" name="password" class="input">
         <button class="button-confirm">Let`s go →</button>
