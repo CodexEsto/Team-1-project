@@ -25,6 +25,92 @@ header {
     font-family: sans-serif;
     font-size: clamp(18px, 4vw, 23px);
 }
+/*hada bach sawebna dak shape*/
+.wavy-circle {
+    position: absolute;
+    --s: clamp(650px, 70vw, 900px);
+    width: var(--s);
+    aspect-ratio: 1;
+    --g: /calc(var(--s)*0.303) calc(var(--s)*0.303) radial-gradient(50% 50%,#000 99%,#0000 101%) no-repeat;
+    mask: 
+          calc(50% + var(--s)*0.311) calc(50% + var(--s)*0) var(--g),
+          calc(50% + var(--s)*0.096) calc(50% + var(--s)*0.296) var(--g),
+          calc(50% + var(--s)*-0.252) calc(50% + var(--s)*0.183) var(--g),
+          calc(50% + var(--s)*-0.252) calc(50% + var(--s)*-0.183) var(--g),
+          calc(50% + var(--s)*0.096) calc(50% + var(--s)*-0.296) var(--g),
+          radial-gradient(calc(var(--s)*0.384),#000 99%,#0000 101%) subtract,
+          calc(50% + var(--s)*0.399) calc(50% + var(--s)*0.29) var(--g),
+          calc(50% + var(--s)*-0.153) calc(50% + var(--s)*0.47) var(--g),
+          calc(50% + var(--s)*-0.494) calc(50% + var(--s)*0) var(--g),
+          calc(50% + var(--s)*-0.153) calc(50% + var(--s)*-0.47) var(--g),
+          calc(50% + var(--s)*0.399) calc(50% + var(--s)*-0.29) var(--g);
+}
+@media (min-width: 2000px) {
+    .wavy-circle {
+        --s: min(60vw, 1400px);
+    }
+    .wavy-circle-first,
+    .wavy-circle-second, .wavy-circle-third {
+        --offset: clamp(-350px, -20vw, -500px);
+    }
+}
+.wavy-circle-first, .wavy-circle-second, .wavy-circle-third {
+    --offset: clamp(-200px, -30vw, -350px);
+    top: var(--offset);
+    left: var(--offset);
+}
+/*hada dyal chakl li kaybedel lon*/
+.wavy-circle-first {
+    opacity: 50%;
+    z-index: -10;
+    background: #FF9FEE;
+    top: -240px;
+    left: -350px;
+    animation: ChangeColor 14s infinite;
+}
+/*had jouj homa dyal dak lkhet li f lkhel dayer b shape li mlewnna*/
+.wavy-circle-second {
+    z-index: -20;
+    background: black;
+    top: -220px;
+    left: -340px;
+    animation: rotate 14s infinite;
+}
+.wavy-circle-third {
+    z-index: -20;
+    background: white;
+    top: -220px;
+    left: -340px;
+    animation: rotate 14s infinite;
+}
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    14.28% { transform: rotate(51deg); }
+    28.56% { transform: rotate(102deg); }
+    42.84% { transform: rotate(153deg); }
+    57.12% { transform: rotate(204deg); }
+    71.40% { transform: rotate(255deg); }
+    85.68% { transform: rotate(306deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes ChangeColor {
+    0% { transform: rotate(0deg);
+        background: #FF9FEE; }
+    14.28% { background: #B3B0FF;
+        transform: rotate(51deg); }
+    28.56% { background: #FD0261;
+        transform: rotate(102deg); }
+    42.84% { background: #aae354;
+        transform: rotate(153deg); }
+    57.12% { background: #A4A1AA;
+        transform: rotate(204deg); }
+    71.40% { background: #524F56;
+        transform: rotate(255deg); }
+    85.68% { background: #252275;
+        transform: rotate(306deg); }
+    100% { transform: rotate(360deg);
+        background: #FF9FEE; }
+}
 /* Home*/
 .btn-5 {
     cursor: pointer;
@@ -129,7 +215,7 @@ header {
     box-shadow: 0px 0px var(--main-color);
     transform: translate(3px, 3px);
 }
-  .button-confirm {
+.button-confirm {
     margin: 50px auto 0 auto;
     width: 120px;
     height: 40px;
