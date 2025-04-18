@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="search_page.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script src="script.js" defer></script>
       <title>Miso</title>
@@ -26,66 +26,13 @@
                 </ul>
             </div>
         </nav>
-        <section class="main">
-            <div class="main-content">
-                <h1>Share your voice. <br>Discover new perspectives.</h1>
-                <p class="slogan">Miso is where ideas meet readers. Write, read, and connect.</p>
-                <a href="#" class="join-button">Join Us Now</a>
-            </div>
-        </section>
-        <section class="categories">
-            <div class="categories-header">
-              <h2>Explore Topics</h2>
-              <p>Discover articles across diverse categories</p>
-            </div>
-            <div class="categories-grid">
-              <div class="category-card" style="--card-color: #FF9FEE;">
-                <h3>Art</h3>
-                <p class="category-desc">Creative expressions</p>
-                <span class="article-count">nombre_articles</span>
-              </div>
-              <div class="category-card" style="--card-color: #B3B0FF;">
-                <h3>Culture</h3>
-                <p class="category-desc">Global traditions and practices</p>
-                <span class="article-count">nombre_articles</span>
-              </div>
-              <div class="category-card" style="--card-color: #FD0261;">
-                <h3>Sport</h3>
-                <p class="category-desc">Athletic excellence</p>
-                <span class="article-count">nombre_articles</span>
-              </div>
-              <div class="category-card" style="--card-color: #aae354;">
-                <h3>Economy</h3>
-                <p class="category-desc">Market dynamics</p>
-                <span class="article-count">nombre_articles</span>
-              </div>
-              <div class="category-card" style="--card-color: #A4A1AA;">
-                <h3>Technology</h3>
-                <p class="category-desc">Digital innovations</p>
-                <span class="article-count">nombre_articles</span>
-              </div>
-              <div class="category-card" style="--card-color: #524F56;">
-                <h3>Health</h3>
-                <p class="category-desc">Mind and body wellness articles</p>
-                <span class="article-count">nombre_articles</span>
-              </div>
-              <div class="category-card" style="--card-color: #252275;">
-                <h3>Entrepreneurship</h3>
-                <p class="category-desc">Startup journeys</p>
-                <span class="article-count">nombre_articles</span>
-              </div>
-              <div class="category-card" style="--card-color: #91558e;">
-                <h3>Other</h3>
-                <p class="category-desc">Miscellaneous gems</p>
-                <span class="article-count">nombre_articles</span>
-              </div>
-            </div>
-          </section>
-          <section class="popular-articles">
-            <div class="section-header">
-              <h2>Most Popular Articles</h2>
-              <p>What others are reading right now</p>
-            </div>
+        <div class="search-container">
+            <form>
+              <input type="text" placeholder="Search..." class="search-input">
+              <button type="submit" class="search-button">Search</button>
+            </form>
+        </div>
+        <section class="popular-articles">
             <div class="articles-grid">
               <div class="card">
                 <div class="header">
@@ -188,12 +135,108 @@
                   </div>
                 </div>
               </div>
-            <a href="#" class="view-all">View All Popular Articles →</a>
+              <div class="articles-grid">
+                <div class="card">
+                  <div class="header">
+                    <div class="image">
+                      <span class="tag">Category</span>
+                    </div>
+                    <div class="date">
+                      <span>Date</span>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <a href="#" class="block">
+                      <span class="title">Titre d'article</span>
+                    </a>
+                    <p class="description">partie lewla mn l'article...</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="header">
+                    <div class="image">
+                      <span class="tag">Category</span>
+                    </div>
+                    <div class="date">
+                      <span>Date</span>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <a href="#" class="block">
+                      <span class="title">Titre d'article</span>
+                    </a>
+                    <p class="description">partie lewla mn l'article...</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="header">
+                    <div class="image">
+                      <span class="tag">Category</span>
+                    </div>
+                    <div class="date">
+                      <span>Date</span>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <a href="#" class="block">
+                      <span class="title">Titre d'article</span>
+                    </span>
+                    </a>
+                    <p class="description">partie lewla mn l'article...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="articles-grid">
+                <div class="card">
+                  <div class="header">
+                    <div class="image">
+                      <span class="tag">Category</span>
+                    </div>
+                    <div class="date">
+                      <span>Date</span>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <a href="#" class="block">
+                      <span class="title">Titre d'article</span>
+                    </a>
+                    <p class="description">partie lewla mn l'article...</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="header">
+                    <div class="image">
+                      <span class="tag">Category</span>
+                    </div>
+                    <div class="date">
+                      <span>Date</span>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <a href="#" class="block">
+                      <span class="title">Titre d'article</span>
+                    </a>
+                    <p class="description">partie lewla mn l'article...</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="header">
+                    <div class="image">
+                      <span class="tag">Category</span>
+                    </div>
+                    <div class="date">
+                      <span>Date</span>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <a href="#" class="block">
+                      <span class="title">Titre d'article</span>
+                    </span>
+                    </a>
+                    <p class="description">partie lewla mn l'article...</p>
+                  </div>
+                </div>
+              </div>
           </section>
-          <footer class="site-footer">
-            <div class="footer-content">
-              <p>Thank you for visiting our website! We appreciate your time and support.</p>
-            </div>
-          </footer>
     </body>
 </html>

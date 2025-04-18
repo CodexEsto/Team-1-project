@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="log_in_page.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Miso | Log in</title>
+    </head>
+    <body>
+        <div class="wavy-circle-first wavy-circle"></div>
+        <div class="wavy-circle-second wavy-circle"></div>
+        <div class="wavy-circle-third wavy-circle"></div>
+        <nav class="navbar">
+            <div class="title">Miso</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="search_page.html">Search</a></li>
+                    <li><a href="log_in_page.html">Log in</a></li>
+                    <li><button class="sign" onclick="window.location.href='sign_up_page.html'">Sign up</button></li>
+                </ul>
+            </div>
+        </nav> 
+        <div class="login-box">
+            <div class="login-header">
+                <header>Log in</header>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Email" autocomplete="off" required>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Password" autocomplete="off" required>
+            </div>
+            <div class="input-submit">
+                <button class="submit-btn" id="submit"></button>
+                <label for="submit">Log in</label>
+            </div>
+            <div class="sign-up-link">
+                <p>Don't have account? <a href="sign_up_page.html">Sign Up</a></p>
+            </div>
+        </div>
+    </body>
+</html>
